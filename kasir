@@ -187,8 +187,8 @@ void PilihBarang(Variable data[]){
 
 //Fungsi untuk mereset pilihan barang
 void ResetPilihan(Variable data[]){
-    int loop;
-    data[0].loop = loop;
+    int loop = 0; // Inisialisasi loop sebagai counter
+    data[0].loop = loop; // Mengatur data[0].loop dengan nilai loop
 // Mereset jumlah barang, total harga, dan diskon
     for (int i = 0; i < 5; i++){
         data[i].jumlah = 0;
@@ -196,7 +196,6 @@ void ResetPilihan(Variable data[]){
         data[i].diskon = 0;
     }
 
-    loop = 0;
 // Mengulangi proses memilih barang
     while(loop == 0){
 
